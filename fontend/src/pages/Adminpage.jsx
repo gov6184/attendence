@@ -12,7 +12,7 @@ function AdminPage() {
   let [capturedImages,setCapturedImages] =useState( [])
 
 let funn=async()=>{
-  let ans= await axios.get("http://localhost:8080/attendence")
+  let ans= await axios.get("https://attendence-b5l7.onrender.com/attendence")
   console.log(ans.data)
   setCapturedImages(ans.data)
 }
