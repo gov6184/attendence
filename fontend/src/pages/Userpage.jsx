@@ -48,7 +48,7 @@ export default function Camera() {
         location,
         date: new Date().toLocaleString(),
       };
-      fetch("http://localhost:8080/attendence/add", {
+      fetch("https://attendence-b5l7.onrender.com/attendence/add", {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' }, // Adjust Content-Type if needed
         body: JSON.stringify(obj), // Convert data to JSON string (if applicable)
