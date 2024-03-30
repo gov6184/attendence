@@ -1,0 +1,101 @@
+/* Base styles */
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f5f5f5;
+  }
+  
+  /* Camera container */
+  .camera-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  /* Input fields */
+  .input-field {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 15px;
+    width: 250px;
+  }
+  
+  /* Camera wrapper */
+  .camera-wrapper {
+    position: relative;
+    width: 300px;
+    height: 200px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    overflow: hidden;
+  }
+  
+  /* Media queries for phone size */
+  @media (max-width: 768px) {
+    .camera-container {
+      width: 100%;
+    }
+  
+    .camera-wrapper {
+      width: 100%;
+      height: auto;
+    }
+  
+    .input-field {
+      width: 100%;
+    }
+  }
+  
+  /* Captured image wrapper */
+  .captured-image-wrapper {
+    margin-top: 20px;
+    text-align: center;
+  }
+  
+  /* Capture button */
+  .capture-button {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-bottom: 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.2s ease-in-out;
+  }
+  
+  .capture-button:hover {
+    background-color: #3e8e41; /* Darker green on hover */
+  }
+  /* General styling for the container */
+.captured-images-wrapper {
+  max-height: 300px; /* Adjust as needed */
+  overflow-y: auto; /* Enable scrolling */
+  padding: 10px;
+  border: 1px solid lightgray; /* Optional border */
+  border-radius: 5px; /* Optional rounded corners */
+}
+
+/* Styling for individual captured image sections */
+.captured-image-info {
+  margin-bottom: 15px;
+  border: 1px solid #ccc; /* Optional border */
+  border-radius: 5px; /* Optional rounded corners */
+  padding: 10px;
+}
+
+/* Styling for the captured image */
+.captured-image {
+  width: 150px; /* Adjust as needed */
+  height: 100px; /* Adjust as needed */
+  border-radius: 10px; /* Rounded corners for the image */
+  object-fit: cover; /* Ensure image fills the space while maintaining aspect ratio */
+}
