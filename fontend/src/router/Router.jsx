@@ -7,7 +7,7 @@ export default function Router() {
   return (
     <Routes>
     <Route path='/' element={<Camera/>}  />
-    <Route path='/Adminpage' element={<AdminPage/>} />
+    <Route path='/admin' element={<AdminPage/>} />
    
 </Routes>  )
 }
